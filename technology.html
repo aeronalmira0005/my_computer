@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width = device-width, initial-scale = 1">
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <title>My Computer</title>
+</head>
+<body>
+            <div class id="sideNav">
+                <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li> 
+                    <li><a href="parts.html">Computer Parts</a></li>
+                    <li><a href="intro.html">Introduction to Computers</a></li>
+                    <li><a href="os.html">Operating system</a></li>
+                    <li><a href="system.html">the Computer System</a></li>
+                    <li><a href="email.html">Internet and Email</a></li>
+                    <li><a href="processor.html">World Processor</a></li>
+                    <li><a href="processing.html">Data Processing cycle</a></li>
+                    <li><a href="presentation.html">Data Presentation</a></li>
+                    <li><a href="data.html">Data Processing in Computer</a></li>
+                    <li><a href="programming.html">Elementary Programming</a></li>
+                    <li><a href="communication.html">Computer Networks and Data Communication</a></li>
+                    <li><a href="#">Impacts of Information Communication Technology on society</a></li>
+                    <li><a href="team.html">Our team</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class id="menubtn">
+                <img src="img/menu.png" id="menu">
+            </div>
+                         <!-- Technology-->
+                         <section id="Technology">
+                         <div class="title-text">
+                         <p>IMPACTS OF INFORMATION COMMUNICATION TECHNOLOGY ON SOCIETY </p>
+                         <h1>Introduction</h1>
+                         </div>
+                         <div class="Features-box">
+                         <div class="Features">
+                         <h1>Definition</h1>
+                         <div class="Features-description">
+                         </div>
+                         <div class="Features-text">
+                         <p><b>This era of ICT continues to influence our livestyle both positively and negatively. some of the issues that result from the use of ICT inthe society. This include: </b></p>
+                         <br>
+                         <ol>
+                         <li class="Technology-list">Effects on Employment</li>
+                         <li class="Technology-list"> Effects on automated production</li>
+                           <li class="Technology-list">Issues of workers health </li>
+                           <li class="Technology-list"> Cultural Effects </li>
+                           <li class ="Technology-List"> Breaththrough in ICT</li>
+                           </ol> 
+                           <br>
+                           <p><b>1. Effects on Employent</b></p>
+                           <br>
+                           <p>The introduction of computers at the workplace has resulted in Creation of new jobs, Replcement of computer illitrate workers and Displacement of jobs</p>
+                           <br>
+                           <p><b>a. Job Creation</b></p>
+                           <br>
+                           <p>ICT has introduced new employment opportunities that never existed before. The new job titles are computer operators, programmers, network administrators, ICT science etc</p>
+                           <br>
+                           <p><b>b. Job Replacement</b></p>
+                           <br>
+                           <p>The workers that are computer illitrate are replaced with those who are computer literate</p>
+                           <br>
+                           <p><b>c. Job Displacement</b></p>
+                           <br>
+                           <p>Here the workers do not lose their jobs instead they are are moved to another place or departmnet</p>
+                           <br>
+                           <p><b>2. Automated Production</b></p>
+                           <br>
+                           <p>- Used in manufacturing industries to automate their process in order to reduce cost, increase production e.g computer controlled robots</p>
+                           <br>
+                           <p><b>3 Issues of workers health</b></p>
+                           <br>
+                           <p></p>
+                           <p>- This are effects on our health e.g Repetative starin Injuries, Eyestrain, Headache, electromagnetic emission and environmental issues</p>
+                           <br>
+                           <p><b>4. Cultural Effects</b></p>
+                           <p>ICT has presented challenges to our moral and cultural values. ICT has changed the way we talk, affected our privacy, human rights and integrity e.g</p>
+                           <br> 
+                           <p>- Use of internet</p>
+                           <br> 
+                           <p>- Computer related crime e.g hackng, eavesdropping etc</p>
+                           <br>
+                           <p>- Use of computers to forge certificates, passport and other documents.</p>
+                           <br>
+                           <p> - Has Has beeen used as a complaint platform agaist aspects of the society g drug abuse</p>
+                           <br>
+                           <p><b>EVOLUTION OF COMPUTERS SYSTEMS</b></p>
+                           <br>
+                           <p>Future trends of ict</p>
+                           </div>
+                           </div>
+                           </section>
+                           <script>
+                            var menubtn = document.getElementById("menubtn")
+                            var sideNav = document.getElementById("sideNav")
+                            var menu = document.getElementById("menu")
+                            menubtn.onclick = function(){
+                           if(sideNav.style.right=="-250px"){
+                           sideNav.style.right="0";
+                           menu.src ="img/close.png";
+                           }
+                          else{
+                          sideNav.style.right="-250px";
+                          menu.src ="img/menu.png";
+                          }
+                          }
+                          var scroll = new SmoothScroll('a[href*="#"]', {
+	                       speed: 100,
+	                       speedAsDuration: true
+                           });
+             </script>
+</body>
+</html> 

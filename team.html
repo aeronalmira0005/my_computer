@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width = device-width, initial-scale = 1">
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <title>My Computer</title>
+</head>
+<body>
+            <div class id="sideNav">
+                <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li> 
+                    <li><a href="parts.html">Computer Parts</a></li>
+                    <li><a href="intro.html">Introduction to Computers</a></li>
+                    <li><a href="os.html">Operating system</a></li>
+                    <li><a href="system.html">the Computer System</a></li>
+                    <li><a href="email.html">Internet and Email</a></li>
+                    <li><a href="processor.html">World Processor</a></li>
+                    <li><a href="processing.html">Data Processing cycle</a></li>
+                    <li><a href="presentation.html">Data Presentation</a></li>
+                    <li><a href="data.html">Data Processing in Computer</a></li>
+                    <li><a href="programming.html">Elementary Programming</a></li>
+                    <li><a href="communication.html">Computer Networks and Data Communication</a></li>
+                    <li><a href="technology.html">Impacts of Information Communication Technology on society</a></li>
+                    <li><a href="#">Our team</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class id="menubtn">
+                <img src="img/menu.png" id="menu">
+            </div>
+                           <!--Team-->
+                           <section id="Team">
+                           <div class="title-text">
+                           <p>OUR TEAM</p>
+                           <h1>Members</h1>
+                           </div>
+                           <div class="Team-row">
+                           <div class="Team-col">
+                           <div class="user">
+                           <img src="img/laranang.jpg">
+                           <div class="info">
+                           </div>
+                           </div>
+                           <p>Daryl Ceremonia Laranang</p>
+                           </div>
+                           <div class="Team-col">
+                           <div class="user">
+                           <img src="img/pastorpide.jpg">
+                           <div class="info">  
+                           </div>
+                           </div>
+                           <p>Jan kyle Cervo pastorpide</p>
+                           </div>
+                           <div class="Team-col">
+                           <div class="user">
+                           <img src="img/Dicimulacion.jpg">
+                           <div class="info">  
+                           </div>
+                           </div>   
+                           <p>Janmarco Dicimulacion</p>
+                           </div>
+                           <div class="Team-col">
+                           <div class="user">
+                           <img src="img/tacderas.jpg">
+                           <div class="info">  
+                             </div>
+                             </div>  
+                             <p>Carljon Tacderas</p>
+                             </div>
+                             </div>
+                             </div>
+                             </section>
+                           <script>
+                            var menubtn = document.getElementById("menubtn")
+                            var sideNav = document.getElementById("sideNav")
+                            var menu = document.getElementById("menu")
+                            menubtn.onclick = function(){
+                           if(sideNav.style.right=="-250px"){
+                           sideNav.style.right="0";
+                           menu.src ="img/close.png";
+                           }
+                          else{
+                          sideNav.style.right="-250px";
+                          menu.src ="img/menu.png";
+                          }
+                          }
+                          var scroll = new SmoothScroll('a[href*="#"]', {
+	                       speed: 100,
+	                       speedAsDuration: true
+                           });
+             </script>
+</body>
+</html> 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width = device-width, initial-scale = 1">
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <title>My Computer</title>
+</head>
+<body>
+            <div class id="sideNav">
+                <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li> 
+                    <li><a href="parts.html">Computer Parts</a></li>
+                    <li><a href="intro.html">Introduction to Computers</a></li>
+                    <li><a href="os.html">Operating system</a></li>
+                    <li><a href="system.html">the Computer System</a></li>
+                    <li><a href="email.html">Internet and Email</a></li>
+                    <li><a href="processor.html">World Processor</a></li>
+                    <li><a href="processing.html">Data Processing cycle</a></li>
+                    <li><a href="presentation.html">Data Presentation</a></li>
+                    <li><a href="data.html">Data Processing in Computer</a></li>
+                    <li><a href="#">Elementary Programming</a></li>
+                    <li><a href="communication.html">Computer Networks and Data Communication</a></li>
+                    <li><a href="technology.html">Impacts of Information Communication Technology on society</a></li>
+                    <li><a href="team.html">Our team</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class id="menubtn">
+                <img src="img/menu.png" id="menu">
+            </div>
+                         <!--programming-->
+                         <section id="programming">
+                         <div class="title-text">
+                         <p>ELEMENTARY PROGRAMMING</p>
+                         <h1>INTRODUCTION</h1>
+                         </div>
+                         <div class="Features-box">
+                         <div class="Features">
+                         <h1>Definition</h1>
+                         <div class="Features-description">
+                         </div>
+                          <div class="Features-text">
+                         <p><b>a) computer program</b></p>
+                         <br>
+                         <li class="Programming-list"> Refers to a set of computer instructions created using a programming language</li>
+                         <br>
+                         <p><b>b) Programming</b></p>
+                         <br>
+                         <li class="Programming-list">Is the process of writting of computer instructions or statements to enable computer acomplish a paticular task/job</li>
+                         <br>
+                         <p><b>c) Programming Language</b></p>
+                         <br>
+                         <li class="Programming-list">Is a set of characters and symbols that used to create computer instructions</li> 
+                         <br>
+                         <p><b>d) program Systax</b></p>
+                         <br>
+                         <li class="Programming-list">Refe of writting characters to the valid sequence or order of writting characters or statements in aprogramming language/li>
+                         <br>
+                         <p><b>e) Source program</b></p>
+                         <br>
+                         <li class="Programming-list">Is the initial code that the programmer enters in the program editor window, that is not yet translated into machine readable form.</li>
+                         <br>
+                         <p><b>f) An object code</b></p>
+                         <br>
+                         <li class="Programming-list">Is already translated into machine readable form</li>
+                         <br>
+                         <p><b>g) Translator</b></p>
+                         <br>
+                         <li class="Programming-list">Utility program or language processors that convert a source code into an object code.</li>
+                          <br>
+                         </div>
+                         </div>
+                         </section>
+                           <script>
+                            var menubtn = document.getElementById("menubtn")
+                            var sideNav = document.getElementById("sideNav")
+                            var menu = document.getElementById("menu")
+                            menubtn.onclick = function(){
+                           if(sideNav.style.right=="-250px"){
+                           sideNav.style.right="0";
+                           menu.src ="img/close.png";
+                           }
+                          else{
+                          sideNav.style.right="-250px";
+                          menu.src ="img/menu.png";
+                          }
+                          }
+                          var scroll = new SmoothScroll('a[href*="#"]', {
+	                       speed: 100,
+	                       speedAsDuration: true
+                           });
+             </script>
+</body>
+</html> 
